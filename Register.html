@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+ <script src="https://cdn.jsdelivr.net/places.js/1/places.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+<script src="script.js"> </script>
+
+</head>
+
+<body>
+<div class="nav">
+  <div class="nav-header">
+    <div class="nav-title"> 
+	NCI Student Bank
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a href="Login.html" target="_self">Login</a>
+    <a href="Register.html" target="_self">Register</a>
+   </div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+
+</div>
+
+<div class="col-xs-12">
+<div id="title_text">
+ <h1>Registration Page</h1>
+<h3>Please enter your details to sign up</h3>
+</div>
+</div>
+
+<center>
+<div class = "formPosition">
+<div class="col-xs-12">
+<form>
+<div class="form-group">
+<input type="text" class="form-control" id="" placeholder="Enter your first name" style =" width: 300px;">
+</div>
+<div class="form-group">
+<input type="text" class="form-control" id="" placeholder="Enter your second name" style =" width: 300px;">
+ 
+</div>
+<div class="form-group">
+<input type="text" class="form-control" id="" placeholder="Enter your address" style =" width: 300px;">
+</div>
+<div class="form-group">
+<input type="text" class="form-control" id="" placeholder="Enter your password" style =" width: 300px;">
+</div>
+<div class="form-group">
+
+<!--
+@reference:https://codepen.io/ericrasch/pen/zjDBx
+Accessed 19/11/2018
+ -->
+<select id="soflow">
+  <!-- This method is nice because it doesn't require extra div tags, but it also doesn't retain the style across all browsers. -->
+  <option>-- Select a Bank --</option>
+  <option>Bank One</option>
+  <option>Bank Two</option>
+  <option>Bank Three</option>
+  <option>Bank Four</option>
+  <option>Bank Five</option>
+</select>
+
+</div>
+<div class="form-group">
+<select id="soflow">
+  <option>-- Select an Account Type --</option>
+  <option>Current Account</option>
+  <option>Savings Account</option>
+</select>
+</div>
+
+<button type="button" class="btn btn-default" onclick="card_number_verification()">Create Account</button>
+<p style ="color: black;"> Already have an account? <a href="Login.html" target="_self"> Login</a> </p>
+
+</form>
+</div>
+</center>
+</div>
+</div>
+</div>
+
+</body>
+</html>

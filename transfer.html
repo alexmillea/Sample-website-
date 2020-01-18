@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transfer</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+ <script src="https://cdn.jsdelivr.net/places.js/1/places.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+<script src="script.js"> </script>
+
+</head>
+<body>
+<div class="nav">
+  <div class="nav-header">
+    <div class="nav-title">  
+	<a class="homeLink" href ="Index.html" target="_self"> NCI Student Bank </a>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a href="transfer.html" target="_self">Transfer</a>
+    <a href="lodgement.html" target="_self">Lodgement</a>
+	<a href="withdrawal.html" target="_self">Withdrawal</a>
+	<a href="transaction.html" target="_self">Transaction</a>
+	<a href="balance.html" target="_self">Balance</a>
+	<a href="Login.html" target="_self"> Log Out </a>
+  </div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+</div>
+
+<div class="col-xs-12">
+<div id="title_text"> 
+	
+ <h1 class="payments">Transfers</h1>
+<p> <h3> Make a transfer to another account </h3> </p>
+</div>
+</div>
+
+<center>
+<div class = "formPosition">
+<div class="col-xs-12">
+<form>
+	<div class="form-group">
+	<input type="text" class="form-control" placeholder="Enter Your Account Number" style =" width: 300px;">
+	</div>
+	<div class="form-group">
+	Payee Details:
+	<input type="text" class="form-control"  placeholder="Enter Payee Account Number" style =" width: 300px;">
+	</div>
+	<div class="form-group">
+	<input type="text" class="form-control" id="" placeholder="Enter Amount to Transfer" style =" width: 300px;">
+	</div>
+
+<button type="button" class="btn btn-default" onclick="">Confirm Payment</button>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+ 
+</body>
+</html>
